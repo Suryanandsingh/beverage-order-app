@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Beverage ordering application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application should have 2 main views. The first view needs to show a beverage. menu and a queueing system for customers.
+The second view needs to display, A simple form where customers can place an order for a beverage and submit it. Once orders are submitted, they should appear in the queue.
 
-## Available Scripts
+## Beverage menu
 
-In the project directory, you can run:
+The beverage menu view should show a list of drinks to the customer.
+The beverage menu should be displayed on page load once the app is initialized. and it can fetch the menu from JSON data.
 
-### `npm start`
+Sample menu:
+a. Sparkling Cranberry Punch 
+b. Iced Chocolate Delight
+c. Raspberry Fizz
+d. Virgin Frozen Margarita
+e. Summer Punch
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Beverage queue
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The beverage queue is comprised of three lists: 
 
-### `npm test`
+a. In the Queue
+b. Being Mixed
+c. Ready to Collect
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once a customer has placed an order for a beverage it should appear in the ‘In the Queue’ list, indicating to the customer that their drink is being processed. Items in the queue should show the name of the customer and the name of the beverage.
+The mixologist who is making the beverage should be able to interact with the queue, firstly by clicking on list items in the ‘In the Queue’ list to move them to the ‘Being Mixed’ list once they are about to make the relevant beverage.
+When the beverage is ready, the mixologist should be able to click on the relevant list item in the ‘Being Mixed’ queue to move it to the ‘Ready to Collect’ list.
+Finally, once the customer has collected their beverage, they should be able to click on the relevant item in the ‘Ready to Collect’ list to remove it from the queue.
 
-### `npm run build`
+## Beverage order form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The beverage order form is a simple form that should allow the customer to select a drink from the menu and submit it along with their name to identify
+   
+themselves.
+The beverages should be rendered as a dropdown list and the customer’s name should be entered into a text input field.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No validation of the form is required.

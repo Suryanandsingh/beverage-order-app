@@ -1,0 +1,44 @@
+@import url('../../utilities/color.module.css');
+
+.main-container {
+    padding: 10%;
+    background: var(--backgroud-color);
+}
+
+.bg-white {
+    background: var(--white);
+}
+
+.margin-2 {
+    margin: 2%;
+}
+
+.padding-2 {
+    padding: 2%;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.h-50vh {
+    height: 50vh !important;
+}
+
+.form-container {
+    margin: 1% 5%;
+    border-radius: 0.375em
+}
+
+.activeDrag {
+    background: var(--secondary-white);
+    border-radius: 5px;
+}
+
+.on-drag {
+    box-shadow: 0 0 5px var(--black);
+}
